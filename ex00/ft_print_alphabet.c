@@ -1,23 +1,33 @@
-* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: llndhlov <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/08 15:44:00 by llndhlov          #+#    #+#             */
-/*   Updated: 2020/07/08 16:22:11 by llndhlov         ###   ########.fr       */
+/*   Created: 2020/07/09 09:20:13 by llndhlov          #+#    #+#             */
+/*   Updated: 2020/07/09 16:38:27 by llndhlov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_print_alphabet(void)
+#include <unistd.h>
+
+int		ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (0);
+}	
+
+void	ft_print_alphabet(void)
 {
 	char i;
 
-	i = 'a';
-	while (i)
-	{
-		ft_putchar(i <= 'z');
-		i++;
-	}
-}
+	i='a';
+	while (i <= 'z')
+	    {
+			ft_putchar(i);
+			i++;
+			
+		}
+			ft_putchar('\n');
+}	
