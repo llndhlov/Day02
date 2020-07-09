@@ -6,17 +6,11 @@
 /*   By: llndhlov <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 10:51:21 by llndhlov          #+#    #+#             */
-/*   Updated: 2020/07/09 17:14:57 by llndhlov         ###   ########.fr       */
+/*   Updated: 2020/07/09 17:39:14 by llndhlov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int		ft_putchar(char c)
-{
-	write(1, &c, 1);
-	return (0);
-}
+int		ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
