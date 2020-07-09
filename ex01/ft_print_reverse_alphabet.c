@@ -5,23 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: llndhlov <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/08 16:13:28 by llndhlov          #+#    #+#             */
-/*   Updated: 2020/07/08 17:09:23 by llndhlov         ###   ########.fr       */
+/*   Created: 2020/07/09 10:36:06 by llndhlov          #+#    #+#             */
+/*   Updated: 2020/07/09 17:07:16 by llndhlov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
- void ft_print_reverse_alphabet(void)
+int		ft_putchar(char c)
 {
+	write(1, &c, 1);
+	return (0);
+}
 
- char i;
+void	ft_print_reverse_alphabet(void)
+{
+	char i;
 
- i = "z";
- while (i)
- {
-
-  ft_putchar(i >= 'a');
-  i--
- 
- }
- 
- }
+	i='z';
+	while(i>='a')
+	{
+		ft_putchar(i);
+		i--;
+	}	
+	 	ft_putchar('\n');
+}		
